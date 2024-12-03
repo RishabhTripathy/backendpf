@@ -1,8 +1,8 @@
 module.exports = ({ env }) => ({
-  host: env("HOST", "0.0.0.0"), // Bind to all available hosts
-  port: env.int("PORT", 1337), // Use the PORT environment variable
+  host: env("HOST", "0.0.0.0"),
+  port: env.int("PORT", 1337),
   app: {
-    keys: env.array("APP_KEYS") // For secure cookie signing (ensure APP_KEYS is set)
+    keys: env.array("APP_KEYS") 
   },
 
   webhooks: {
